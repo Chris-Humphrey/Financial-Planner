@@ -1,12 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'semantic-ui-css/semantic.min.css';
+import App from './components/App';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import Dashboard from './components/Dashboard/Dashboard';
+import { BrowserRouter, Switch, Route, withRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { createStore } from "redux";
+import { Provider } from 'react-redux';
+// import firebase from './firebase';
+import reducer from './reducers/user_reducer';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+const store = createStore(reducer);
+
+class Root extends React.Component {
+
+    // componentDidMount(){
+    //     firebase
+    //     .auth()
+    //     .onAuthStateChanged((user) => {
+    //         if(user){
+    //             this.props.history.push('/')
+    //         }
+    //     })
+    // }
+
+    render (){
+        return (
+            <Switch>
+                <Route exact path="/" component={App} />
+                <Route path='/dashboard' component={Dashboard} />
+                <Route path="/register" component={Register} />
+                <Route path="/login" component={Login} />
+            </Switch>
+        )
+    }
+}
+
+const RootWithAuth = withRouter(Root)
+
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <RootWithAuth />
+        </BrowserRouter>
+    </Provider>
+
+    , document.getElementById('root'));
+
