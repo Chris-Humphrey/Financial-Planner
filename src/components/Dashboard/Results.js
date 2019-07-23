@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import addBills from '../../actions/addBills';
 import {Segment, Form, Table } from 'semantic-ui-react';
 
-class AddBills extends React.Component {
+class Results extends React.Component {
     constructor(props) {
         super(props);
 
@@ -175,4 +175,4 @@ let mapDispatchToProps = (dispatch) => {
 export default connect (
     mapStateToProps,
     mapDispatchToProps
-)(AddBills);
+)(Results);
