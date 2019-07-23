@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Finance Tracker
 
-## Available Scripts
+## Application to help with your personal finances
 
-In the project directory, you can run:
+Some things to implement:
 
-### `npm start`
+*   Categories(line-items) for each line item that you can programatically add to the form. Budget for each line-item:
+    -   Required: Rent, Utility's, Grocery's
+    -   Optional: Restaurants, Bars, Movies, clothes shopping, other shopping, gas, 
+*   Add your categories, input your personal information the form, adding fields or removing fields
+    -   create section for adding your own with a section for recommendations that they can instantly add
+*   A route for investments
+    -   shows up-to-date api information for investments and savings accounts
+*   APIs
+    - geographic data based on industry for items such as cost of living
+    - api for current offerings of investment and savings options
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Post-MVP
 
-### `npm test`
+Other things if I have time:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   A route for tax information
+*   Add Update functionality to reducer/ Dashboard Results to edit in real time
+*   Add local storage
+*   User authentication to save your personal data
+*   Prior salaries month over month or year over year
+*   Suggestions based on spending habits. Ex: Someone spends 10% of each months paycheck on eating out for lunch. Instead you save it or invest it.
+    Now you have 120% extra money in savings every year. Or allocate it to a vacation trip. Or just save it for a shopping spree at the end of the month/year.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Built by Chris Humphrey
