@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
-import { Segment, Tab } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Segment, Tab } from 'semantic-ui-react';
+import AddIncome from './AddIncome';
+import AddBills from './AddBills';
+import Savings from './Savings';
 
 const panes = [
-    { menuItem: 'Income', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
-    { menuItem: 'Bills', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
-    { menuItem: 'Savings', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+    { menuItem: 'Income', render: () => <Tab.Pane><AddIncome /></Tab.Pane> },
+    { menuItem: 'Expenses', render: () => <Tab.Pane><AddBills /></Tab.Pane> },
+    { menuItem: 'Results', render: () => <Tab.Pane><Savings /></Tab.Pane> },
 ]
 
 class TabExampleOnTabChange extends Component {
@@ -16,9 +19,6 @@ class TabExampleOnTabChange extends Component {
         return (
         <div>
             <Tab panes={panes} onTabChange={this.handleChange} />
-            <Segment tertiary>
-            <pre>{JSON.stringify(this.state, null, 2)}</pre>
-            </Segment>
         </div>
         )
     }

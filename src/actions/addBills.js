@@ -1,9 +1,10 @@
 let addBills = (item) => {
     return {
         type: 'addBills',
-        itemData: {
+        billsData: {
             billsName: item.billsName,
-            billsPrice: item.billsPrice
+            billsAmount: item.billsAmount,
+            billsFixed: item.billsFixed
         }
     }
 }

@@ -11,9 +11,9 @@ class Register extends React.Component {
     render() {
         return (
             <>
-                <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+                <Grid textAlign='center' style={{ height: '60vh' }} verticalAlign='middle'>
                     <Grid.Column style={{ maxWidth: 450 }}>
-                    <Header as='h2' color='teal' textAlign='center'>
+                    <Header style={{color: '#2ec86f'}} as='h2' textAlign='center'>
                         <Icon name='lock'/> Log-in to your account
                     </Header>
                     <Form size='large'>
@@ -27,7 +27,7 @@ class Register extends React.Component {
                             type='password'
                         />
 
-                        <Button color='teal' fluid size='large'>
+                        <Button style={{backgroundColor: '#2ec86f'}} fluid size='large'>
                             Login
                         </Button>
                         </Segment>

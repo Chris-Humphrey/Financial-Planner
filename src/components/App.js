@@ -28,7 +28,7 @@ const HomepageHeading = ({ mobile }) => (
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
         marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginTop: mobile ? '1.5em' : '1.5em',
       }}
     />
     <Header
@@ -41,7 +41,7 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button href="/dashboard" primary size='huge'>
+    <Button href="/dashboard" primary size='huge' style={{backgroundColor: '#2ec86f'}}>
       Show me the money
       <Icon name='right arrow' />
     </Button>
@@ -72,31 +72,9 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 500, padding: '2em 0em' }}
             vertical
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
-                <Menu.Item as='a' active>
-                  Finance Tracker
-                </Menu.Item>
-                <Menu.Item as='a'>About</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' href="/login" inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' href='/register' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
-              </Container>
-            </Menu>
             <HomepageHeading />
           </Segment>
         </Visibility>
