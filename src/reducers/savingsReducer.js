@@ -23,7 +23,7 @@ let savings = (
                 })
             }
         case 'addBills':
-                console.log(action.billsData.billsFixed)
+                // console.log(action.billsData.billsFixed)
             const fixedBills = ()=> { return action.billsData.billsFixed ? state.totalFixedBills + parseInt(action.billsData.billsAmount) : state.totalFixedBills};
             const nonFixedBills = ()=> { return !action.billsData.billsFixed ? state.totalNonFixedBills + parseInt(action.billsData.billsAmount) : state.totalNonFixedBills};
             return {
