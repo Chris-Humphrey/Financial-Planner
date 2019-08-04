@@ -33,7 +33,7 @@ class Register extends React.Component {
                         </Segment>
                     </Form>
                     <Message>
-                        Already have an account? <a href='/login'>Sign Up</a>
+                        Already have an account? <a href='/login'>Sign In</a>
                     </Message>
                     </Grid.Column>
                 </Grid>

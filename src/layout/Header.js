@@ -37,7 +37,7 @@ const NavBarMobile = ({
         >
         <Menu fixed="top" inverted>
             <Menu.Item>
-            <Image size="mini" src="../../../public/images/gold.png" />
+            <Image size="mini" src="./images/gold.png" />
             </Menu.Item>
             <Menu.Item onClick={onToggle}>
             <Icon name="sidebar" />
