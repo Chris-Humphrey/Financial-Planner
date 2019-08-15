@@ -18,8 +18,6 @@ Some things to implement:
 
 ## Post-MVP
 
-Other things if I have time:
-
 *   A route for tax information
 *   Add Update functionality to reducer/ Dashboard Results to edit in real time
 *   Add local storage
