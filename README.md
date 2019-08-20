@@ -1,8 +1,6 @@
 # Finance Tracker
 
-Live Link: [Finance Tracker](https://track-my-finances.herokuapp.com/){:target="_blank" rel="noopener"}
-
-Live Link: https://track-my-finances.herokuapp.com/
+Live Link: [Finance Tracker](https://track-my-finances.herokuapp.com/)
 
 
 ## Application to help with your personal finances
